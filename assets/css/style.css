@@ -1,0 +1,366 @@
+@charset "UTF-8";
+/* --- mixin 定義 ---------------------------------------- */
+/* --- ハンバーガーmenu　------------------------------------　*/
+/* --- ハンバーガーmenu　ここまで------------------------------------　*/
+/* --- 全体のBOX定義 ---------------------------------------- */
+.box {
+  position: relative;
+  max-width: 1400px;
+  height: 100vh;
+  min-height: 375px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* --- 背景の指定 ------------------------------------------- */
+.box .bgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-animation: bgAnime 16s infinite;
+          animation: bgAnime 16s infinite;
+  /* 4画像 × 各4s = 16s */
+}
+
+/* --- 段差で背景画像のアニメーションを実行 ----------------- */
+.box .src1 {
+  background-image: url(../images/mainvisual_top_1.jpg);
+  /* 背景の画像を指定 */
+  background-size: cover;
+  background-position: center center;
+}
+
+.box .src2 {
+  background-image: url(../images/mainvisual_top_2.jpg);
+  /* 背景の画像を指定 */
+  background-size: cover;
+  background-position: center center;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.box .src3 {
+  background-image: url(../images/mainvisual_top_3.jpg);
+  /* 背景の画像を指定 */
+  background-size: cover;
+  background-position: center center;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.box .src4 {
+  background-image: url(../images/mainvisual_top_4.jpg);
+  /* 背景の画像を指定 */
+  background-size: cover;
+  background-position: center center;
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes bgAnime {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bgAnime {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* --- 前面の文字定義（サンプルのため変更してください） ----- */
+#header {
+  position: relative;
+  z-index: 2;
+}
+
+.bnr-2 {
+  background-image: url(../images/image_news_053_1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 330px;
+}
+
+.bnr-3 {
+  background-image: url(../images/mainvisual_top_4.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 330px;
+}
+
+.container {
+  max-width: 1180px;
+}
+
+.content {
+  text-align: center;
+}
+
+.content:nth-of-type(1) {
+  margin: 70px 0;
+  padding: 50px 0;
+}
+
+.content h1 {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-size: 28px;
+}
+
+.content a {
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.content a::after {
+  content: "";
+  width: 70px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 5px);
+          transform: translate(-50%, 5px);
+}
+
+.grid-center {
+  margin: 0 !important;
+}
+
+.inner_logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.inner_logo.active {
+  opacity: 1;
+}
+
+.inner_logo img {
+  width: 100px;
+}
+
+.nav_area {
+  width: 100vw;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  z-index: 20;
+}
+
+.nav_area a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 30;
+}
+
+.nav_open div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 30px;
+  height: 1px;
+  background-color: #331122;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav_open div:nth-of-type(1) {
+  -webkit-transform: translate(-50%, -10px);
+          transform: translate(-50%, -10px);
+}
+
+.nav_open div:nth-of-type(3) {
+  -webkit-transform: translate(-50%, 10px);
+          transform: translate(-50%, 10px);
+}
+
+.nav_open.active div:nth-last-child(1) {
+  -webkit-transform: rotate(45deg) translate(-50%, 0px);
+          transform: rotate(45deg) translate(-50%, 0px);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.nav_open.active div:nth-last-child(2) {
+  opacity: 0;
+}
+
+.nav_open.active div:nth-last-child(3) {
+  -webkit-transform: rotate(-45deg) translate(-50%, 0px);
+          transform: rotate(-45deg) translate(-50%, 0px);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.main {
+  height: 800px;
+  width: 100%;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%);
+  }
+  70% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%);
+  }
+  70% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+          animation-name: slideIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  display: inline-block;
+  position: absolute;
+  width: 240px;
+  top: 50%;
+  /* 中央寄せ */
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.nav_mb_base {
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  min-height: 580px;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+  position: fixed;
+}
+
+.nav_mb_base.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav_mb_outline {
+  position: absolute;
+  top: 20vh;
+  width: 100vw;
+  height: 50vh;
+  min-height: 290px;
+  text-align: center;
+}
+
+.nav_mb_outline a {
+  font-family: 'Quicksand','小塚ゴシック Pro R','Kozuka Gothic Pro Regular',"Noto Sans Japanese", "游ゴシック体", "Yu Gothic", YuGothic, "メイリオ", "Meiryo", "游ゴシック","ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
+i {
+  font-size: 28px;
+  margin: 8px;
+}
+
+.onlineshop a {
+  position: relative;
+  font-size: 14px;
+}
+
+.onlineshop a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -5px);
+          transform: translate(-50%, -5px);
+  width: 200px;
+  height: 1px;
+  background-color: #000;
+}
+
+.onlineshop a::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 5px);
+          transform: translate(-50%, 5px);
+  width: 200px;
+  height: 1px;
+  background-color: #000;
+}
+/*# sourceMappingURL=style.css.map */
