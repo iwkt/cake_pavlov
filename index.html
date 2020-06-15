@@ -1,179 +1,94 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <link href="./assets/slick/slick-theme.css" rel="stylesheet" type="text/css">
-  <link href="./assets/slick/slick.css" rel="stylesheet" type="text/css">
-  <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
-  <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> -->
-  <script src="./assets/jQuery/jquery.min.js"></script>
-  <script src="./assets/slick/slick.min.js"></script>
-  <title>フレデリック</title>
-  <link rel="shortcut icon" href="./assets/images/cake-icon.png">
-</head>
-
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset_style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
+    <link href="./assets/slick/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="./assets/slick/slick.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+    <script src="./assets/jQuery/jquery.min.js"></script>
+    <script src="./assets/slick/slick.min.js"></script>
+    <title>pavlov</title>
+    <link rel="shortcut icon" href="./assets/images/cake-icon.png">
+  </head>
 <body>
   <div class="container">
-    <header class="header">
-      <div id="header-top" class="header-top grid">
-        <div id="company-logo" class="header-logo  col-9">
-          <img src="./assets/images/heade-logo.png" alt="Fredlic_cassal">
+  <!-- <header class="header">
+    <div id="navMBBase" class="nav_mb_base">
+      <div class="nav_mb_outline">
+        <div class="nav_area">
+          <a id="navOpen" class="nav_open">
+            <div></div>
+            <div></div>
+            <div></div>
+          </a>
+          <div id="nav_close" class="nav_trriger">
+          </div>
         </div>
-        <div class="icons col-3-middle">
-          <i class="fab fa-facebook"></i>
-          <i class="fas fa-camera"></i>
-        </div>
+    
       </div>
-
-      <div id="nav" class="nav-list grid">
-        <div class="nav-item arrow col">
-          <dl class="menu">
-            <dt><a herf="#">ABOUT</a></dt>
-              <dd>
-                <ul>
-                  <li><a href="#">Brand Profile</a></li>
-                  <li><a href="#">Spécialité</a></li>
-                </ul>
-              </dd>
-          </dl>
+    
+    </div>
+  </header> -->
+  <header id="header">
+    <div  id="imageArea" class="image_area">
+      <div class="box">
+        <div class="bgImg src1"></div>
+        <div class="bgImg src2"></div>
+        <div class="bgImg src3"></div>
+        <div class="bgImg src4"></div>
+        <!-- フェード<br>切り替え -->
+        <div class="boxString">
+          <img class="slideIn" src="./assets/images/pavlov.svg" alt="pavlov_logo">
         </div>
-        <div class="nav-item col">
-          <dl class="menu"><a herf="#">BOUTIQUE</a></div>
-        <div class="nav-item arrow col"><span></span>
-          <dl class="menu">
-            <dt><a herf="#">COLLECTION</a></dt>
-            <dd>
-              <ul>
-                <li><a href="#">Season</a></li>
-                <li><a href="#">Inspiration</a></li>
-                <li class="text-long"><a href="#">Petitis Gateaux/Entrements</a></li>
-                <li><a href="#">Chocolats</a></li>
-                <li><a href="#">Others</a></li>
-              </ul>
-            </dd>
-          </dl>
-        </div>
-        <div class="nav-item col">
-          <dl class="menu"><a herf="#">COMPANY</a>
-        </div>
-        <div class="nav-item arrow col">
-          <dl class="menu">
-            <dt><a herf="#">ONLINE SHOP</a></dt>
-            <dd>
-              <ul>
-                <li><a href="#">Brand Profile</a></li>
-                <li><a href="#">Spécialité</a></li>
-              </ul>
-            </dd>
-          </dl>
+        <!-- <div class="nav"> -->
+        <div class="nav_area">
+          <a id="navOpen" class="nav_open">
+            <div></div>
+            <div></div>
+            <div></div>
+          </a>
         </div>
 
-
-        <!-- <div class="nav-item  arrow col"><a href="#">ABOUT</a></div>
-        <div class="nav-item  col"><a href="#">BOUTIQUE</a></div>
-        <div class="nav-item arrow col"><a href="#">COLLECTION</a></div>
-        <div class="nav-item col"><a href="#">COMPANY</a></div>
-        <div class="nav-item arrow col"><a href="#">ONLINE SHOP</a></div> -->
-      </div>
-    </header>
-
-    <section id="slide-img">
-      <div class="slide-wrapper grid">
-        <div class="slide col-12">
-          <ul class="slider">
-            <li><img src="./assets/images/mainVisual1.jpg" alt="shu"></li>
-            <li><img src="./assets/images/mainVisual2.jpg" alt="chocoCake"></li>
-            <li><img src="./assets/images/mainVisual3.jpg" alt="shuCream"></li>
-            <li><img src="./assets/images/mainVisual4.jpg" alt="pie"></li>
-          </ul>
-          <div class="logo">
-            <img src="./assets/images/logo-img.png" alt="logo" class="logo">
+        <div id="navMBBase" class="nav_mb_base grid-middle">
+          <div id="navMbOutline" class="nav_mb_outline col grid">
+            <div class="col-12"><a href="#">CONCEPT</a></div>
+            <div class="col-12"><a href="#">CAFE</a></div>
+            <div class="col-12"><a href="#">SHOP</a></div>
+            <div class="col-12"><a href="#">CAKE</a></div>
+            <div class="col-12"><a href="#">NEWS</a></div>
+            <div class="col-12"><a href="#"></a></div>
+            <div class="col-12 onlineshop"><a href="#">ONLINE SHOP</a></div>
+            <div class="col-12"><i class="fab fa-facebook"></i><i class="fab fa-instagram"></i></div>
           </div>
         </div>
       </div>
-    </section>
-    <section id="news-area">
-      <div class="news-wrapper">
-        <div class="grid-1">
-          <div class="contents-title col-12">
-            <h2>News & Topics</h2>
-          </div>
-          <!-- <ul id="news" class="news-list">
-              <li>2020.06.06</li>
-              <li><a href="http://www.frederic-cassel.jp/news/2020/3883.html">＜ 抹茶のテリーヌのご紹介 ＞</a></li>
-              <li><a href="http://www.frederic-cassel.jp/news/2020/3781.html">＜ 新商品”アディクション”のご紹介　5月30日～ ＞</a></li>
-            </ul> -->
-          <div class="news-list">
-            <div class="news-1 news-item col-12">
-              <ul class="news-new">
-                <li class="news-date">2020.06.06</li>
-                <li class="news-article"><a href="http://www.frederic-cassel.jp/news/2020/3883.html">＜ 抹茶のテリーヌのご紹介 ＞</a></li>
-              </ul>
-            </div>
-            <div class="news-2 news-item col-12">
-              <ul>
-                <li class="news-date">2020.06.01</li>
-                <li class="news-article"><a href="http://www.frederic-cassel.jp/news/2020/3798.html">＜ 販売中のプティガトー ＞</a></li>
-              </ul>
-            </div>
-            <div class="news-3 news-item col-12">
-              <ul>
-                <li class="news-date">2020.05.28</li>
-                <li class="news-article"><a href="http://www.frederic-cassel.jp/news/2020/3781.html">＜ 新商品”アディクション”のご紹介　5月30日～ ＞</a></li>
-              </ul>
-            </div>
-            <div class="news-4 news-item col-12">
-              <ul>
-                <li class="news-date">2020.05.06</li>
-                <li class="news-article"><span class="bold"><a href="http://www.frederic-cassel.jp/news/2020/3849.html">＜ 銀座三越 営業再開のお知らせ　5月30日～ ＞</a></span></li>
-              </ul>
-            </div>
-            <div class="news-5 news-item col-12">
-              <ul>
-                <li class="news-date">2020.04.07</li>
-                <li class="news-article"><span class="bold"><a href="http://www.frederic-cassel.jp/news/2020/3849.html">＜ 銀座三越
-                      臨時休業のお知らせ　4月8日～ ＞</a></span></li>
-              </ul>
-            </div>
-            <div class="news-table news-item col-12">
-              <a href="/news/">ニュース一覧</a>
-            </div>
-            <div id="burner">
-              <div class="bnr">
-                <img src="./assets/images/banner-reservation.jpg" alt="cake-reserve">
-              </div>
-             <div class="bnr">
-                <img src="./assets/images/recipe-book.jpg" alt="recipe">
-              </div>
-              <div class="bnr">
-                <img src="./assets/images/staff.jpg" alt="stuff-boshu">
-              </div>
-            </div>
-          </div>
-        </div>
-          <div id="profile" class="pf grid-3">
-            <div class="contents-title col_xs-12">
-              <h2>Brand Profile</h2>
-            </div>
-            <div class="contents-title col_xs-12">
-              <h2>Cacao Forest</h2>
-            </div>
-            <div class="contents-title col_xs-12">
-              <h2>Spécialité</h2>
-            </div>
-          </div>
-        
-    </section>
+    </div>
+  </header>
 
-
-
+  <div id="innerLogo" class="inner_logo">
+    <img class="slideIn" src="./assets/images/pavlov.svg" alt="pavlov_logo">
   </div>
-  <script src="./assets/jQuery/script.js"></script>
-</body>
+  <section id="ContentList" class="content_list grid-center">
+    <div class="content bnr-1 col-12">
+      <h1>営業再開のお知らせ</h1>
+      <a href="#">詳細はこちら</a>
+    </div>
+    <div class="content bnr-2 col-12">
+      
+    </div>
+    <div class="content bnr-3 col-12">
+    
+    </div>
+  </section>
 
+
+  <script src="./assets/jQuery/script.js"></script>
+  </div>
+</body>
 </html>
