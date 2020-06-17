@@ -180,6 +180,8 @@
 
 .content {
   text-align: center;
+  vertical-align: middle;
+
   &:nth-of-type(1) {
   margin: 70px 0;
   padding: 50px 0;
@@ -204,6 +206,12 @@
       left: 50%;
       transform: translate(-50%,5px);
     }
+  }
+  & span {
+    border: 1px solid #fff;
+    color: #FFF;
+    padding: 10px;
+    
   }
 
 }
