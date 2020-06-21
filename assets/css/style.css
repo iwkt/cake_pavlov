@@ -240,6 +240,50 @@ body {
   width: 100px;
 }
 
+.item_area {
+  width: 90%;
+  margin: 0 auto !important;
+}
+
+.item_area_bk {
+  background-color: #f4f4f4;
+  width: 100%;
+}
+
+.item_child {
+  position: relative;
+  height: 90%;
+  border: 1px solid #c4c4c4;
+}
+
+.item_child ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.item_content {
+  margin-bottom: 1rem !important;
+}
+
+.item_text {
+  background-color: #fff;
+  font-size: 1.4rem;
+  text-align: center;
+  height: 33vh;
+}
+
+.item_text li {
+  margin-bottom: 1rem;
+}
+
+.item_pict img {
+  height: 33vh;
+}
+
 .js-fadein {
   opacity: 0;
   visibility: hidden;
