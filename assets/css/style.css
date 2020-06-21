@@ -4,8 +4,15 @@ body {
   font-family: Quicksand;
 }
 
-/* --- ハンバーガーmenu　------------------------------------　*/
-/* --- ハンバーガーmenu　ここまで------------------------------------　*/
+.area_title {
+  color: #c6c6c6;
+  font-size: 3.2rem;
+  font-family: Quicksand;
+  margin-top: 1rem;
+  margin-bottom: 1rem !important;
+  text-align: center;
+}
+
 /* --- 全体のBOX定義 ---------------------------------------- */
 .box {
   position: relative;
@@ -102,7 +109,6 @@ body {
   }
 }
 
-/* --- 前面の文字定義（サンプルのため変更してください） ----- */
 #header {
   position: relative;
   z-index: 2;
@@ -124,6 +130,33 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   height: 330px;
+}
+
+.company_name {
+  line-height: 1;
+}
+
+.consept_area {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.consept_pict {
+  width: 100%;
+}
+
+.consept_text {
+  color: #333333;
+  font-family: Quicksand;
+  font-size: 1.2rem;
+  font-weight: 100;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.consept_text h3 {
+  font-size: 2rem;
+  margin: 1rem 0;
 }
 
 .content.new a {
@@ -281,14 +314,6 @@ body {
 
 .news_area {
   text-align: center;
-}
-
-.news_area h2 {
-  color: #c6c6c6;
-  font-size: 3.2rem;
-  font-family: Quicksand;
-  margin-top: 3rem;
-  margin-bottom: 1rem !important;
 }
 
 .news_article {

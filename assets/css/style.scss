@@ -18,70 +18,14 @@ body {
   font-family: Quicksand;
 }
 
-/* --- ハンバーガーmenu　------------------------------------　*/
-// .nav {
-//   &_area {
-//     width: 100vw;
-//     height: 80px;
-//     position: fixed;
-//     top: 0;
-//     margin: 0 auto;
-//     z-index: 100;
-//   }
-//   &_mb {
-//     &_outline {
-//       position: fixed;
-//       opacity: 1.0;
-//       width: 100vw;
-//       height: 100vh;
-//       // z-index: 100;
-//     }
-    
-//   }
-//   &_open {
-//     display: block;
-//     position: fixed;
-//     right: 30px;
-//     top: 30px;
-//     width: 30px;
-//     height: 30px;
-//     // z-index: 300;
-//     & div{
-//       transition: 0.3s;
-//     }
-//     &.active div {
-//       &:nth-last-child(1) {
-//         transform: rotate(45deg) translate(-50%,0px);
-//         transform-origin: left;
-//       }
-//       &:nth-last-child(2) {
-//         opacity: 0;
-//       }
-//       &:nth-last-child(3) {
-//         transform: rotate(-45deg) translate(-50%,0px);
-//         transform-origin: left;
-//       }
-//     }
-//     & div {
-//       position: absolute;
-//       top: 50%;
-//       left: 50%;
-//       transform: translate(-50%, -50%);
-//       width: 30px;
-//       height: 1px;
-//       background-color: #331122;
-      
-//       &:nth-of-type(1) {
-//         transform: translate(-50%,-10px);
-//        }
-//        &:nth-of-type(3) {
-//         transform: translate(-50%,10px);
-//        }
-//     }
-//   }
-// }
-
-/* --- ハンバーガーmenu　ここまで------------------------------------　*/
+.area_title {
+    color: #c6c6c6;
+    font-size: 3.2rem;
+    font-family: Quicksand;
+    margin-top: 1rem;
+    margin-bottom: 1rem !important;
+    text-align: center;
+}
 
 /* --- 全体のBOX定義 ---------------------------------------- */
 .box {
@@ -140,23 +84,6 @@ body {
  100% { opacity: 0; }
 }
 
-/* --- 前面の文字定義（サンプルのため変更してください） ----- */
-// .boxString {
-//   & img {
-//     display    : inline-block;
-//     position   : absolute;
-//     width: 240px;
-//     top        : 50%;                               /* 中央寄せ */
-//     left       : 50%;
-//     transform  : translate(-50%,-50%);
-//     z-index    : 200;
-//     // padding    : 20px;
-//     // background : rgba(0, 127, 255, 0.7);          /* 半透明の青 */
-//     // color      : #fff;
-//     }
-// }
-
-
 #header {
   position:relative;
   z-index:2;
@@ -170,25 +97,40 @@ body {
     background-repeat: no-repeat;
     height: 330px;
     margin-bottom: 5rem !important;
-    // opacity: 0;
-    // transition: ease-in-out 3s;
-    // visibility: hidden;
-    // &.active {
-    //   opacity: 1;
-    //   visibility: visible;
-    // }
   }
+
   &-3 {
     background-image: url(../images/mainvisual_top_4.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     height: 330px;
-    // opacity: 0;
-    // transition: ease-in 3s;
-    // &.active {
-    //   opacity: 1;
-    // }
+  }
+}
+
+.company_name {
+  line-height: 1;
+}
+
+.consept {
+  &_area {
+    width: 90%;
+    margin: 0 auto;
+  }
+  &_pict {
+    width: 100%;
+  }
+  &_text {
+    color: #333333;
+    font-family: Quicksand;
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-align: center;
+    line-height: 2rem;
+    & h3 {
+      font-size: 2rem;
+      margin: 1rem 0;
+    }
   }
 }
 
@@ -239,21 +181,6 @@ body {
     text-align: center;
     font-size: 28px;
   }
-  // & a {
-  //   position: relative;
-  //   font-size: 1.2rem;
-  //   &::after {
-  //     content: "";
-  //     width: 70px;
-  //     height: 1px;
-  //     background-color: #000;
-  //     position: absolute;
-  //     bottom: 0;
-  //     left: 50%;
-  //     transform: translate(-50%,5px);
-  //   }
-  // }
-  
 }
 
 .grid-center {
@@ -347,14 +274,7 @@ body {
 .news {
   &_area {
     text-align: center;
-    & h2 {
-      color: #c6c6c6;
-      font-size: 3.2rem;
-      font-family: Quicksand;
-      margin-top: 3rem;
-      margin-bottom: 1rem !important;
     }
-  }
   &_article {
     margin-bottom: 4rem !important;
   }
@@ -404,14 +324,8 @@ body {
 
   70% {
     opacity: 0.6;
-    // transform: translate(-50%,-50%);
   }
 
-  // 90% {
-  //   opacity: 0.9;
-  //   transform: translate(-50%,-50%);
-  // }
-  
   100% {
     opacity: 1;
     transform: translate(-50%,-50%);
@@ -421,15 +335,13 @@ body {
 .slideIn {
   animation-name: slideIn;
   animation-duration: 2s;
-  // animation-timing-function: ease-out;
 
   display    : inline-block;
   position   : absolute;
   width: 240px;
-  top        : 50%;                               /* 中央寄せ */
+  top        : 50%;  /* 中央寄せ */
   left       : 50%;
   transform  : translate(-50%,-50%);
-  // z-index    : 200;
 }
 //　スライドイン　ここまで　------------------------
 
@@ -439,7 +351,6 @@ body {
   width: 100vw;
   height: 100vh;
   min-height: 580px;
-  // position: absolute;
   z-index: 10;
   opacity: 0;
   visibility: hidden;
