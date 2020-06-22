@@ -107,6 +107,39 @@ body {
     height: 330px;
   }
 }
+.aaa {
+  width: 80%;
+}
+.cafe {
+  &_area {
+    margin: 0 !important;
+  }
+  &_inner {
+    border: 1px solid #c4c4c4;
+    height: auto;
+    margin: 2rem 0 !important;
+    & ul {
+      color: #333;
+      font-size: 1.2rem;
+      width: 268px;
+      letter-spacing: 0.1em;
+    }
+    & p {
+      text-align: center;
+      margin: 1rem 0 2.5rem;
+    }
+  }
+  &_outer {
+    height: auto;
+  }
+  &_text {
+    margin-top: 1rem;
+  }
+  // &_room {
+  //   width: 268px;
+  //   padding-bottom: 1rem;
+  // }
+}
 
 .company_name {
   line-height: 1;
@@ -214,14 +247,14 @@ body {
   &_area {
     width: 90%;
     margin: 0 auto !important;
+    &_space {
+      background-color: #f4f4f4;
+      width: 100%;
+      height: 1.5rem;
+    }
     &_bk {
       background-color: #f4f4f4;
       width: 100%;
-      &_top_space {
-        background-color: #f4f4f4;
-        width: 100%;
-        height: 1.5rem;
-      }
     }
   }
   &_child {
@@ -240,12 +273,11 @@ body {
   }
   &_content {
     margin-bottom: 1rem !important;
-    &:nth-of-type(1) {
-      margin-top: 1.5rem !important;
+    &:last-child {
+      margin-bottom: 0 !important;
     }
-  }
+    }
   &_text {
-    
     background-color: #fff;
     font-size: 1.4rem;
     text-align: center;
@@ -259,7 +291,7 @@ body {
 
 .item_pict {
   & img {
-  height: 33vh;
+  height: 220px;
   }
 }
 
@@ -338,9 +370,7 @@ body {
   }
   &_pict {
     & img {
-      width: 160px;
-      // height: 27vh;
-      width: $news_col_width;
+      width: 159px;
       object-fit: cover;
     }
   }
