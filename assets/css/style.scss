@@ -124,6 +124,7 @@ body {
       font-size: 1.2rem;
       width: 268px;
       letter-spacing: 0.1em;
+      padding: 0 20px;
     }
     & p {
       text-align: center;
@@ -159,13 +160,18 @@ body {
     font-family: Quicksand;
     font-size: 1.2rem;
     font-weight: 100;
-    text-align: center;
+    text-align: left;
     line-height: 2rem;
     & h3 {
       font-size: 2rem;
-      margin: 1rem 0;
+      margin: 1.5rem 0;
+      text-align: center;
     }
   }
+}
+
+.more-clum {
+  text-align: center;
 }
 
 .content.new {
