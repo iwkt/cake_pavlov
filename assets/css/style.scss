@@ -12,6 +12,7 @@
   }
 }
 
+$item_low_height: 220px;
 $news_col_width: 161px;
 
 body {
@@ -281,7 +282,7 @@ body {
     background-color: #fff;
     font-size: 1.4rem;
     text-align: center;
-    height: 33vh;
+    height: $item_low_height;
     & li {
       margin-bottom: 1rem;
     }
@@ -291,7 +292,7 @@ body {
 
 .item_pict {
   & img {
-  height: 220px;
+  height: $item_low_height;
   }
 }
 
