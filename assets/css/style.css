@@ -423,9 +423,7 @@ body {
 }
 
 .news_pict img {
-  width: 159px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 150px;
 }
 
 .news_text {
