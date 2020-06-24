@@ -464,9 +464,10 @@ ul {
 }
 
 .shop_btn span {
-  border: 1px solid #745323;
+  border: 1px solid #937856;
+  color: #937856;
   font-size: 1.2rem;
-  padding: 5px;
+  padding: 3px;
 }
 
 .shop_pict {
