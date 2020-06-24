@@ -132,10 +132,6 @@ body {
   height: 330px;
 }
 
-.aaa {
-  width: 80%;
-}
-
 .cafe_area {
   margin: 0 !important;
 }
@@ -296,13 +292,13 @@ body {
   width: 100%;
 }
 
-.item_child {
+.item_child_rel {
   position: relative;
   height: 90%;
   border: 1px solid #c4c4c4;
 }
 
-.item_child ul {
+.item_child_rel ul {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -328,6 +324,16 @@ body {
 
 .item_text li {
   margin-bottom: 1rem;
+}
+
+.item_child {
+  border: 1px solid #c4c4c4;
+  height: 80%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 .item_pict img {
@@ -453,12 +459,27 @@ body {
           transform: translate(-50%, 5px);
 }
 
+.shop_btn {
+  margin-top: 1.5rem;
+}
+
+.shop_btn span {
+  border: 1px solid #745323;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
 .shop_pict {
   text-align: center;
 }
 
 .shop_pict img {
-  width: 50%;
+  width: 60%;
+}
+
+.shop_name {
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 @-webkit-keyframes slideIn {

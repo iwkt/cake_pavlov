@@ -215,9 +215,9 @@
             <div class="item_pict col-6">
               <img src="./assets/images/item01.jpg" alt="tea&cake">
             </div>
-            <div class="item_text col-6 grid-center-middle">
-              <div class="item_child col-10">
-                <ul>
+            <div class="item_text col-6 grid-center">
+              <div class="item_child col-10 grid-center-middle">
+                <ul class="col-12">
                   <li>パブロフオリジナルアソート</li>
                   <li>ORIGINAL<br>ASSORT</li>
                   <li class="more">more</li>
@@ -225,12 +225,29 @@
               </div>
             </div>
           </div>
+            <!-- 下はgridlexだけで作成 -->
           <div class="item_content grid">
             <div class="item_pict col-6">
               <img src="./assets/images/item02.jpg" alt="tea&cake">
             </div>
             <div class="item_text col-6 grid-center">
-              <div class="item_child col-10-middle">
+              <div class="item_child col-10 grid-center-middle" >
+                <ul class="col-12">
+                  <li>フロマージュ</li>
+                  <li>FROMAGE</li>
+                  <li class="more">more</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 下はposition relativeで作成 .item_chile_relがそれ-->
+          <div class="item_content grid">
+            <div class="item_pict col-6">
+              <img src="./assets/images/item02.jpg" alt="tea&cake">
+            </div>
+            <div class="item_text col-6 grid-center">
+              <div class="item_child_rel col-10-middle">
                 <ul>
                   <li>フロマージュ</li>
                   <li>FROMAGE</li>
@@ -239,12 +256,13 @@
               </div>
             </div>
           </div>
+
           <div class="item_content grid">
             <div class="item_pict col-6">
               <img src="./assets/images/item03.jpg" alt="rode_cake">
             </div>
             <div class="item_text col-6 grid-center-middle">
-              <div class="item_child col-10">
+              <div class="item_child_rel col-10">
                 <ul>
                   <li>ローズ</li>
                   <li>ROSE</li>
@@ -258,7 +276,7 @@
               <img src="./assets/images/item04.jpg" alt="red_apple">
             </div>
             <div class="item_text col-6 grid-center-middle">
-              <div class="item_child col-10">
+              <div class="item_child_rel col-10">
                 <ul>
                   <li>紅玉りんご</li>
                   <li>POMME</li>
@@ -268,7 +286,8 @@
             </div>
           </div>
         </div>
-    </div>
+      </div>
+      <!-- 下はposition relativeで作成ここまで -->
     <!-- 下は余白用 -->
     <div class="item_area_space"></div>
   </section>
@@ -298,18 +317,17 @@
         <img src="./assets/images/shop01.jpg" alt="image_new_shop">
       </div>
       
-      <div class="shop_text grid">
-        <ul class="col-12">
-          <li>2020.06.01</li>
-          <li>新店舗オープンのお知らせ</li>
-        </ul>
-        <div class="col-12">
-          <a class="shop_name" href="#">元町店</a>
+        <!-- <div class="btn col-12"> -->
+        <button class="shop_btn col-12"><span>CAFE</span></span></button>
+        <!-- </div> -->
+        <div class="shop_name col-12">
+          <a href="#">元町店</a>
         </div>
-      </div>
+      
     </div>
   </section>
   <script src="./assets/jQuery/script.js"></script>
   </div>
+  
 </body>
 </html>

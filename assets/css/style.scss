@@ -108,9 +108,7 @@ body {
     height: 330px;
   }
 }
-.aaa {
-  width: 80%;
-}
+
 .cafe {
   &_area {
     margin: 0 !important;
@@ -264,7 +262,7 @@ body {
       width: 100%;
     }
   }
-  &_child {
+  &_child_rel {
     // width: 80%;
     position: relative;
     height: 90%;
@@ -294,6 +292,16 @@ body {
     }
   }
 
+}
+
+.item_child {
+  border: 1px solid #c4c4c4;
+  height: 80%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 .item_pict {
@@ -408,12 +416,25 @@ body {
 }
 
 .shop {
+  &_btn {
+    margin-top: 1.5rem;
+    & span {
+      border: 1px solid #745323;
+      font-size: 1.2rem;
+      padding: 5px;
+    }
+  }
   &_pict {
     text-align: center;
   }
   &_pict img {
-    width: 50%;
+    width: 60%;
   }
+}
+
+.shop_name  {
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 
