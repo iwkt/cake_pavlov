@@ -408,9 +408,11 @@ body {
 }
 
 .shop {
+  &_pict {
+    text-align: center;
+  }
   &_pict img {
-    width: 60vw;
-    height: auto;
+    width: 50%;
   }
 }
 

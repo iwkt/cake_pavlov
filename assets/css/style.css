@@ -453,9 +453,12 @@ body {
           transform: translate(-50%, 5px);
 }
 
+.shop_pict {
+  text-align: center;
+}
+
 .shop_pict img {
-  width: 60vw;
-  height: auto;
+  width: 50%;
 }
 
 @-webkit-keyframes slideIn {
