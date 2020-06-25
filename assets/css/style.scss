@@ -1,11 +1,7 @@
 /* --- mixin 定義 ---------------------------------------- */
-@mixin bgi(
-  $url: url(),
-  $size: cover,
-  $position: center center
-) { 
+@mixin bgi($url: url(), $size: cover, $position: center center) {
   background: {
-    image: $url; 
+    image: $url;
     size: $size;
     position: $position;
     repeat: no-repeat;
@@ -20,79 +16,90 @@ body {
 }
 
 .area_title {
-    color: #c6c6c6;
-    font-size: 3.2rem;
-    font-family: Quicksand;
-    margin-top: 1rem;
-    margin-bottom: 1rem !important;
-    text-align: center;
+  color: #c6c6c6;
+  font-size: 3.2rem;
+  font-family: Quicksand;
+  margin-top: 1rem;
+  margin-bottom: 1rem !important;
+  text-align: center;
 }
 
 /* --- 全体のBOX定義 ---------------------------------------- */
 .box {
-  position   : relative;
-  max-width  : 1400px;
-  height     : 100vh;
+  position: relative;
+  max-width: 1400px;
+  height: 100vh;
   min-height: 375px;
-  margin     : auto;
-  overflow   : hidden;
+  margin: auto;
+  overflow: hidden;
 }
 
 /* --- 背景の指定 ------------------------------------------- */
 .box .bgImg {
-  position   : absolute;
-  top        : 0;
-  left       : 0;
-  bottom     : 0;
-  right      : 0;
-  opacity    : 0;
-  animation  : bgAnime 16s infinite;   /* 4画像 × 各4s = 16s */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  animation: bgAnime 16s infinite; /* 4画像 × 各4s = 16s */
 }
 
 /* --- 段差で背景画像のアニメーションを実行 ----------------- */
 .box {
   & .src1 {
-    background-image : url(../images/mainvisual_top_1.jpg);   /* 背景の画像を指定 */
+    background-image: url(../images/mainvisual_top_1.jpg); /* 背景の画像を指定 */
     background-size: cover;
     background-position: center center;
   }
   & .src2 {
-    background-image : url(../images/mainvisual_top_2.jpg);   /* 背景の画像を指定 */
+    background-image: url(../images/mainvisual_top_2.jpg); /* 背景の画像を指定 */
     background-size: cover;
     background-position: center center;
-    animation-delay  : 4s;
+    animation-delay: 4s;
   }
   & .src3 {
-    background-image : url(../images/mainvisual_top_3.jpg);   /* 背景の画像を指定 */
+    background-image: url(../images/mainvisual_top_3.jpg); /* 背景の画像を指定 */
     background-size: cover;
     background-position: center center;
-    animation-delay  : 8s;
+    animation-delay: 8s;
   }
   & .src4 {
-    background-image : url(../images/mainvisual_top_4.jpg);   /* 背景の画像を指定 */
+    background-image: url(../images/mainvisual_top_4.jpg); /* 背景の画像を指定 */
     background-size: cover;
     background-position: center center;
-    animation-delay  : 12s;
+    animation-delay: 12s;
     animation-fill-mode: forwards;
   }
 }
 
 @keyframes bgAnime {
-   0% { opacity: 0; }
-  10% { opacity: 1; }
-  25% { opacity: 1; }
-  35% { opacity: 0; }
- 100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 #header {
-  position:relative;
-  z-index:2;
+  position: relative;
+  z-index: 2;
 }
 
 .bnr {
   &-2 {
-    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../images/image_news_053_1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../images/image_news_053_1.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -174,32 +181,32 @@ body {
 
 .content.new {
   & a {
-      color: #fff !important;
-      position: relative;
-      font-size: 1.2rem;
-      &::after {
-        background-color: #fff !important;
-      }
-    }    
+    color: #fff !important;
+    position: relative;
+    font-size: 1.2rem;
+    &::after {
+      background-color: #fff !important;
+    }
+  }
 
   & span {
-      color: #FFF;
-      padding: 0 1%;
-      font-size: 3rem;
-      font-family: Quicksand;
-      &:nth-of-type(1) {
-        border: 1px solid #fff;
-      }
+    color: #fff;
+    padding: 0 1%;
+    font-size: 3rem;
+    font-family: Quicksand;
+    &:nth-of-type(1) {
+      border: 1px solid #fff;
     }
+  }
   & p {
-    color: #FFF;
+    color: #fff;
     overflow-wrap: break-word;
     padding: 5px;
     font-size: 1.4rem;
-    font-family: Quicksand; 
+    font-family: Quicksand;
     margin: 1rem 1rem 2rem;
   }
-}  
+}
 
 .container {
   max-width: 1180px;
@@ -212,8 +219,8 @@ body {
     margin: 0 !important;
   }
   &:nth-of-type(1) {
-  margin: 70px 0;
-  padding: 50px 0;
+    margin: 70px 0;
+    padding: 50px 0;
   }
   & h2 {
     margin: 0 auto;
@@ -228,12 +235,12 @@ body {
 }
 
 .inner_logo {
-  position:fixed;
-  top:0;
-  left:0;
-  z-index:1;
-  background-color:#fff;
-  width:100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+  width: 100%;
   height: 80px;
   text-align: center;
   opacity: 0;
@@ -272,7 +279,7 @@ body {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%,-50%);
+      transform: translate(-50%, -50%);
       width: 90%;
     }
   }
@@ -281,7 +288,7 @@ body {
     &:last-child {
       margin-bottom: 0 !important;
     }
-    }
+  }
   &_text {
     background-color: #fff;
     font-size: 1.4rem;
@@ -291,7 +298,6 @@ body {
       margin-bottom: 1rem;
     }
   }
-
 }
 
 .item_child {
@@ -306,7 +312,36 @@ ul {
 
 .item_pict {
   & img {
-  height: $item_low_height;
+    height: $item_low_height;
+  }
+}
+
+.footer {
+  &_copy {
+    font-size: 1.1rem;
+    padding-bottom: 3rem !important;
+  }
+  &_logo {
+    text-align: center;
+    margin-bottom: 1rem !important;
+    margin-top: 1.5rem !important;
+    & img {
+    width: 100px;
+    }
+  }
+  &_info li {
+    font-size: 1.2rem;
+    color: #333333;
+    padding-bottom: 0.4rem;
+    text-align: center;
+    }
+  &_nav {
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(73, 73, 73);
+    padding: 1.8rem 0 !important;
+    border-top: 1px solid rgb(212, 212, 212);
+    border-bottom: 1px solid rgb(212, 212, 212);
   }
 }
 
@@ -314,12 +349,14 @@ ul {
   opacity: 0;
   visibility: hidden;
   transform: translateY(0px);
-  transition: all 2s; }
+  transition: all 2s;
+}
 
 .js-fadein.is-show {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0px); }
+  transform: translateY(0px);
+}
 
 .nav_area {
   width: 100vw;
@@ -351,32 +388,32 @@ ul {
     transition: 0.3s;
 
     &:nth-of-type(1) {
-      transform: translate(-50%,-10px);
-      }
+      transform: translate(-50%, -10px);
+    }
     &:nth-of-type(3) {
-    transform: translate(-50%,10px);
+      transform: translate(-50%, 10px);
     }
   }
 }
 
 .nav_open.active div {
-    &:nth-last-child(1) {
-      transform: rotate(45deg) translate(-50%,0px);
-      transform-origin: left;
-    }
-    &:nth-last-child(2) {
-      opacity: 0;
-    }
-    &:nth-last-child(3) {
-      transform: rotate(-45deg) translate(-50%,0px);
-      transform-origin: left;
-    }
+  &:nth-last-child(1) {
+    transform: rotate(45deg) translate(-50%, 0px);
+    transform-origin: left;
   }
+  &:nth-last-child(2) {
+    opacity: 0;
+  }
+  &:nth-last-child(3) {
+    transform: rotate(-45deg) translate(-50%, 0px);
+    transform-origin: left;
+  }
+}
 
 .news {
   &_area {
     text-align: center;
-    }
+  }
   &_article {
     margin-bottom: 4rem !important;
   }
@@ -411,11 +448,14 @@ ul {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%,5px);
+    transform: translate(-50%, 5px);
   }
 }
 
 .shop {
+  &_area {
+    margin-bottom: 5rem !important;
+  }
   &_btn {
     margin-top: 1.5rem;
     & span {
@@ -435,19 +475,17 @@ ul {
   }
 }
 
-.shop_name  {
+.shop_name {
   text-align: center;
   font-size: 1.2rem;
   margin-bottom: 3rem !important;
-  
 }
-
 
 //　スライドイン　------------------------------
 @keyframes slideIn {
   0% {
     opacity: 0;
-    transform: translate(-50%,-30%) ;
+    transform: translate(-50%, -30%);
   }
 
   70% {
@@ -456,7 +494,7 @@ ul {
 
   100% {
     opacity: 1;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -464,15 +502,14 @@ ul {
   animation-name: slideIn;
   animation-duration: 2s;
 
-  display    : inline-block;
-  position   : absolute;
+  display: inline-block;
+  position: absolute;
   width: 240px;
-  top        : 50%;  /* 中央寄せ */
-  left       : 50%;
-  transform  : translate(-50%,-50%);
+  top: 50%; /* 中央寄せ */
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 //　スライドイン　ここまで　------------------------
-
 
 .nav_mb_base {
   background-color: #fff;
@@ -482,7 +519,7 @@ ul {
   z-index: 10;
   opacity: 0;
   visibility: hidden;
-  transition: .3s;
+  transition: 0.3s;
   position: fixed;
 
   &.active {
@@ -499,7 +536,11 @@ ul {
   min-height: 290px;
   text-align: center;
   & a {
-    font-family: 'Quicksand','小塚ゴシック Pro R','Kozuka Gothic Pro Regular',"Noto Sans Japanese", "游ゴシック体", "Yu Gothic", YuGothic, "メイリオ", "Meiryo", "游ゴシック","ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
+    font-family: "Quicksand", "小塚ゴシック Pro R", "Kozuka Gothic Pro Regular",
+      "Noto Sans Japanese", "游ゴシック体", "Yu Gothic", YuGothic, "メイリオ",
+      "Meiryo", "游ゴシック", "ヒラギノ角ゴ ProN W3",
+      "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3",
+      "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
     // font-size: 16px;
     text-size-adjust: 100%;
   }
@@ -518,7 +559,7 @@ i {
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-50%,-5px);
+    transform: translate(-50%, -5px);
     width: 200px;
     height: 1px;
     background-color: #000;
@@ -528,9 +569,9 @@ i {
     position: absolute;
     bottom: 0px;
     left: 50%;
-    transform: translate(-50%,5px);
+    transform: translate(-50%, 5px);
     width: 200px;
     height: 1px;
     background-color: #000;
   }
-} 
+}

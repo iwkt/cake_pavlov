@@ -206,7 +206,7 @@ body {
 }
 
 .content.new span {
-  color: #FFF;
+  color: #fff;
   padding: 0 1%;
   font-size: 3rem;
   font-family: Quicksand;
@@ -217,7 +217,7 @@ body {
 }
 
 .content.new p {
-  color: #FFF;
+  color: #fff;
   overflow-wrap: break-word;
   padding: 5px;
   font-size: 1.4rem;
@@ -340,6 +340,37 @@ ul {
   height: 220px;
 }
 
+.footer_copy {
+  font-size: 1.1rem;
+  padding-bottom: 3rem !important;
+}
+
+.footer_logo {
+  text-align: center;
+  margin-bottom: 1rem !important;
+  margin-top: 1.5rem !important;
+}
+
+.footer_logo img {
+  width: 100px;
+}
+
+.footer_info li {
+  font-size: 1.2rem;
+  color: #333333;
+  padding-bottom: 0.4rem;
+  text-align: center;
+}
+
+.footer_nav {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #494949;
+  padding: 1.8rem 0 !important;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+}
+
 .js-fadein {
   opacity: 0;
   visibility: hidden;
@@ -459,6 +490,10 @@ ul {
           transform: translate(-50%, 5px);
 }
 
+.shop_area {
+  margin-bottom: 5rem !important;
+}
+
 .shop_btn {
   margin-top: 1.5rem;
 }
@@ -541,8 +576,8 @@ ul {
   z-index: 10;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   position: fixed;
 }
 
@@ -561,7 +596,7 @@ ul {
 }
 
 .nav_mb_outline a {
-  font-family: 'Quicksand','小塚ゴシック Pro R','Kozuka Gothic Pro Regular',"Noto Sans Japanese", "游ゴシック体", "Yu Gothic", YuGothic, "メイリオ", "Meiryo", "游ゴシック","ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
+  font-family: "Quicksand", "小塚ゴシック Pro R", "Kozuka Gothic Pro Regular", "Noto Sans Japanese", "游ゴシック体", "Yu Gothic", YuGothic, "メイリオ", "Meiryo", "游ゴシック", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
   -webkit-text-size-adjust: 100%;
      -moz-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
