@@ -466,8 +466,10 @@ ul {
 .shop_btn span {
   border: 1px solid #937856;
   color: #937856;
+  display: inline-block;
   font-size: 1.2rem;
-  padding: 3px;
+  padding: 2px;
+  width: 90px;
 }
 
 .shop_pict {
@@ -481,6 +483,7 @@ ul {
 .shop_name {
   text-align: center;
   font-size: 1.2rem;
+  margin-bottom: 3rem !important;
 }
 
 @-webkit-keyframes slideIn {
